@@ -22,7 +22,7 @@ pytest -q tests/test_guidance.py tests/test_ouro.py tests/test_huginn.py \
   tests/test_huginn_logits.py tests/test_parcae.py tests/test_qwen_loop.py
 ```
 
-Some optional tests need native model-code fixtures and skip when those fixtures are absent. A CPU test pass is not a real-checkpoint GPU certificate. The full tests directory also contains historical integration tests requiring unpublished local run artifacts.
+Some checks depend on native model-code fixtures or fixture capabilities and skip when those prerequisites are absent. A CPU test pass is not a real-checkpoint GPU certificate. The full tests directory also contains historical integration tests requiring unpublished local run artifacts.
 
 For an adapter-only example, run the preparation and `examples/generate_ouro.py` commands in the README. Preparation downloads a pinned public revision, creates a local compatibility copy, and preserves the original weight blobs. `trust_remote_code` is used for these model implementations.
 
