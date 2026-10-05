@@ -1,0 +1,1453 @@
+{
+  "id": "aime-14",
+  "n": 30,
+  "samples_per_problem": 16,
+  "samples_per_arm": 480,
+  "correct_counts": {
+    "baseline": 168,
+    "adaptive": 195
+  },
+  "comparison": {
+    "bootstrap": {
+      "interpolation": "linear at (n-1)*p",
+      "percentiles": [
+        2.5,
+        97.5
+      ],
+      "replicates": 10000,
+      "samples_kept_together": 16,
+      "seed": 42,
+      "unit": "problem"
+    },
+    "metrics": {
+      "pass_at_1": {
+        "baseline_percent": 35.0,
+        "candidate_percent": 40.625,
+        "delta_percentage_points": 5.625,
+        "paired_problem_bootstrap_95_percentile": [
+          0.8333333333333334,
+          10.833333333333334
+        ]
+      },
+      "pass_at_10": {
+        "baseline_percent": 61.1904761904762,
+        "candidate_percent": 67.22902097902099,
+        "delta_percentage_points": 6.0385447885447885,
+        "paired_problem_bootstrap_95_percentile": [
+          -0.6462808025308023,
+          14.78814935064935
+        ]
+      }
+    },
+    "problems": [
+      {
+        "baseline_c_i": 15,
+        "candidate_c_i": 16,
+        "delta_pass_at_1": 0.0625,
+        "delta_pass_at_10": 0.0,
+        "task_id": "AIME2024-I-01"
+      },
+      {
+        "baseline_c_i": 9,
+        "candidate_c_i": 16,
+        "delta_pass_at_1": 0.4375,
+        "delta_pass_at_10": 0.0,
+        "task_id": "AIME2024-I-02"
+      },
+      {
+        "baseline_c_i": 14,
+        "candidate_c_i": 15,
+        "delta_pass_at_1": 0.0625,
+        "delta_pass_at_10": 0.0,
+        "task_id": "AIME2024-I-03"
+      },
+      {
+        "baseline_c_i": 16,
+        "candidate_c_i": 16,
+        "delta_pass_at_1": 0.0,
+        "delta_pass_at_10": 0.0,
+        "task_id": "AIME2024-I-04"
+      },
+      {
+        "baseline_c_i": 5,
+        "candidate_c_i": 3,
+        "delta_pass_at_1": -0.125,
+        "delta_pass_at_10": -0.03434065934065933,
+        "task_id": "AIME2024-I-05"
+      },
+      {
+        "baseline_c_i": 12,
+        "candidate_c_i": 15,
+        "delta_pass_at_1": 0.1875,
+        "delta_pass_at_10": 0.0,
+        "task_id": "AIME2024-I-06"
+      },
+      {
+        "baseline_c_i": 16,
+        "candidate_c_i": 15,
+        "delta_pass_at_1": -0.0625,
+        "delta_pass_at_10": 0.0,
+        "task_id": "AIME2024-I-07"
+      },
+      {
+        "baseline_c_i": 0,
+        "candidate_c_i": 1,
+        "delta_pass_at_1": 0.0625,
+        "delta_pass_at_10": 0.625,
+        "task_id": "AIME2024-I-08"
+      },
+      {
+        "baseline_c_i": 4,
+        "candidate_c_i": 9,
+        "delta_pass_at_1": 0.3125,
+        "delta_pass_at_10": 0.008241758241758212,
+        "task_id": "AIME2024-I-09"
+      },
+      {
+        "baseline_c_i": 0,
+        "candidate_c_i": 0,
+        "delta_pass_at_1": 0.0,
+        "delta_pass_at_10": 0.0,
+        "task_id": "AIME2024-I-10"
+      },
+      {
+        "baseline_c_i": 0,
+        "candidate_c_i": 0,
+        "delta_pass_at_1": 0.0,
+        "delta_pass_at_10": 0.0,
+        "task_id": "AIME2024-I-11"
+      },
+      {
+        "baseline_c_i": 0,
+        "candidate_c_i": 0,
+        "delta_pass_at_1": 0.0,
+        "delta_pass_at_10": 0.0,
+        "task_id": "AIME2024-I-12"
+      },
+      {
+        "baseline_c_i": 7,
+        "candidate_c_i": 5,
+        "delta_pass_at_1": -0.125,
+        "delta_pass_at_10": -0.0013736263736263687,
+        "task_id": "AIME2024-I-13"
+      },
+      {
+        "baseline_c_i": 0,
+        "candidate_c_i": 3,
+        "delta_pass_at_1": 0.1875,
+        "delta_pass_at_10": 0.9642857142857143,
+        "task_id": "AIME2024-I-14"
+      },
+      {
+        "baseline_c_i": 4,
+        "candidate_c_i": 6,
+        "delta_pass_at_1": 0.125,
+        "delta_pass_at_10": 0.008116883116883078,
+        "task_id": "AIME2024-I-15"
+      },
+      {
+        "baseline_c_i": 8,
+        "candidate_c_i": 8,
+        "delta_pass_at_1": 0.0,
+        "delta_pass_at_10": 0.0,
+        "task_id": "AIME2024-II-01"
+      },
+      {
+        "baseline_c_i": 2,
+        "candidate_c_i": 1,
+        "delta_pass_at_1": -0.0625,
+        "delta_pass_at_10": -0.25,
+        "task_id": "AIME2024-II-02"
+      },
+      {
+        "baseline_c_i": 8,
+        "candidate_c_i": 7,
+        "delta_pass_at_1": -0.0625,
+        "delta_pass_at_10": 0.0,
+        "task_id": "AIME2024-II-03"
+      },
+      {
+        "baseline_c_i": 16,
+        "candidate_c_i": 16,
+        "delta_pass_at_1": 0.0,
+        "delta_pass_at_10": 0.0,
+        "task_id": "AIME2024-II-04"
+      },
+      {
+        "baseline_c_i": 0,
+        "candidate_c_i": 0,
+        "delta_pass_at_1": 0.0,
+        "delta_pass_at_10": 0.0,
+        "task_id": "AIME2024-II-05"
+      },
+      {
+        "baseline_c_i": 8,
+        "candidate_c_i": 11,
+        "delta_pass_at_1": 0.1875,
+        "delta_pass_at_10": 0.0,
+        "task_id": "AIME2024-II-06"
+      },
+      {
+        "baseline_c_i": 1,
+        "candidate_c_i": 7,
+        "delta_pass_at_1": 0.375,
+        "delta_pass_at_10": 0.375,
+        "task_id": "AIME2024-II-07"
+      },
+      {
+        "baseline_c_i": 0,
+        "candidate_c_i": 0,
+        "delta_pass_at_1": 0.0,
+        "delta_pass_at_10": 0.0,
+        "task_id": "AIME2024-II-08"
+      },
+      {
+        "baseline_c_i": 0,
+        "candidate_c_i": 0,
+        "delta_pass_at_1": 0.0,
+        "delta_pass_at_10": 0.0,
+        "task_id": "AIME2024-II-09"
+      },
+      {
+        "baseline_c_i": 2,
+        "candidate_c_i": 4,
+        "delta_pass_at_1": 0.125,
+        "delta_pass_at_10": 0.11675824175824179,
+        "task_id": "AIME2024-II-10"
+      },
+      {
+        "baseline_c_i": 0,
+        "candidate_c_i": 0,
+        "delta_pass_at_1": 0.0,
+        "delta_pass_at_10": 0.0,
+        "task_id": "AIME2024-II-11"
+      },
+      {
+        "baseline_c_i": 9,
+        "candidate_c_i": 6,
+        "delta_pass_at_1": -0.1875,
+        "delta_pass_at_10": -0.00012487512487513452,
+        "task_id": "AIME2024-II-12"
+      },
+      {
+        "baseline_c_i": 12,
+        "candidate_c_i": 15,
+        "delta_pass_at_1": 0.1875,
+        "delta_pass_at_10": 0.0,
+        "task_id": "AIME2024-II-13"
+      },
+      {
+        "baseline_c_i": 0,
+        "candidate_c_i": 0,
+        "delta_pass_at_1": 0.0,
+        "delta_pass_at_10": 0.0,
+        "task_id": "AIME2024-II-14"
+      },
+      {
+        "baseline_c_i": 0,
+        "candidate_c_i": 0,
+        "delta_pass_at_1": 0.0,
+        "delta_pass_at_10": 0.0,
+        "task_id": "AIME2024-II-15"
+      }
+    ],
+    "sample_losses": 36,
+    "sample_ties": 381,
+    "sample_wins": 63
+  },
+  "canonical_gate": {
+    "all_correct": true,
+    "boundary_cases": [
+      {
+        "expected_error": null,
+        "expected_value": 25,
+        "result": {
+          "command_offset": 0,
+          "content": "025",
+          "error": null,
+          "parsed": true,
+          "value": 25
+        },
+        "text": "\\boxed{025}"
+      },
+      {
+        "expected_error": null,
+        "expected_value": 0,
+        "result": {
+          "command_offset": 0,
+          "content": "0",
+          "error": null,
+          "parsed": true,
+          "value": 0
+        },
+        "text": "\\boxed{0}"
+      },
+      {
+        "expected_error": null,
+        "expected_value": 999,
+        "result": {
+          "command_offset": 0,
+          "content": "999",
+          "error": null,
+          "parsed": true,
+          "value": 999
+        },
+        "text": "\\boxed{999}"
+      },
+      {
+        "expected_error": null,
+        "expected_value": 7,
+        "result": {
+          "command_offset": 0,
+          "content": "007",
+          "error": null,
+          "parsed": true,
+          "value": 7
+        },
+        "text": "\\boxed \t\n{ 007\n}"
+      },
+      {
+        "expected_error": null,
+        "expected_value": 2,
+        "result": {
+          "command_offset": 15,
+          "content": "002",
+          "error": null,
+          "parsed": true,
+          "value": 2
+        },
+        "text": "\\boxed{1} then \\boxed{002}"
+      },
+      {
+        "expected_error": "invalid_ascii_integer",
+        "expected_value": null,
+        "result": {
+          "command_offset": 15,
+          "content": "bad",
+          "error": "invalid_ascii_integer",
+          "parsed": false,
+          "value": null
+        },
+        "text": "\\boxed{1} then \\boxed{bad}"
+      },
+      {
+        "expected_error": "missing_open_brace",
+        "expected_value": null,
+        "result": {
+          "command_offset": 15,
+          "content": null,
+          "error": "missing_open_brace",
+          "parsed": false,
+          "value": null
+        },
+        "text": "\\boxed{1} then \\boxed"
+      },
+      {
+        "expected_error": "unclosed_brace",
+        "expected_value": null,
+        "result": {
+          "command_offset": 15,
+          "content": null,
+          "error": "unclosed_brace",
+          "parsed": false,
+          "value": null
+        },
+        "text": "\\boxed{1} then \\boxed{"
+      },
+      {
+        "expected_error": "no_boxed",
+        "expected_value": null,
+        "result": {
+          "command_offset": null,
+          "content": null,
+          "error": "no_boxed",
+          "parsed": false,
+          "value": null
+        },
+        "text": "The answer is 25"
+      },
+      {
+        "expected_error": "invalid_ascii_integer",
+        "expected_value": null,
+        "result": {
+          "command_offset": 0,
+          "content": "1000",
+          "error": "invalid_ascii_integer",
+          "parsed": false,
+          "value": null
+        },
+        "text": "\\boxed{1000}"
+      },
+      {
+        "expected_error": "invalid_ascii_integer",
+        "expected_value": null,
+        "result": {
+          "command_offset": 0,
+          "content": "-1",
+          "error": "invalid_ascii_integer",
+          "parsed": false,
+          "value": null
+        },
+        "text": "\\boxed{-1}"
+      },
+      {
+        "expected_error": "invalid_ascii_integer",
+        "expected_value": null,
+        "result": {
+          "command_offset": 0,
+          "content": "+1",
+          "error": "invalid_ascii_integer",
+          "parsed": false,
+          "value": null
+        },
+        "text": "\\boxed{+1}"
+      },
+      {
+        "expected_error": "invalid_ascii_integer",
+        "expected_value": null,
+        "result": {
+          "command_offset": 0,
+          "content": "1/2",
+          "error": "invalid_ascii_integer",
+          "parsed": false,
+          "value": null
+        },
+        "text": "\\boxed{1/2}"
+      },
+      {
+        "expected_error": "invalid_ascii_integer",
+        "expected_value": null,
+        "result": {
+          "command_offset": 0,
+          "content": "1.0",
+          "error": "invalid_ascii_integer",
+          "parsed": false,
+          "value": null
+        },
+        "text": "\\boxed{1.0}"
+      },
+      {
+        "expected_error": "invalid_ascii_integer",
+        "expected_value": null,
+        "result": {
+          "command_offset": 0,
+          "content": "336^\\circ",
+          "error": "invalid_ascii_integer",
+          "parsed": false,
+          "value": null
+        },
+        "text": "\\boxed{336^\\circ}"
+      },
+      {
+        "expected_error": "invalid_ascii_integer",
+        "expected_value": null,
+        "result": {
+          "command_offset": 0,
+          "content": "\\text{025}",
+          "error": "invalid_ascii_integer",
+          "parsed": false,
+          "value": null
+        },
+        "text": "\\boxed{\\text{025}}"
+      },
+      {
+        "expected_error": "invalid_ascii_integer",
+        "expected_value": null,
+        "result": {
+          "command_offset": 0,
+          "content": "{25}",
+          "error": "invalid_ascii_integer",
+          "parsed": false,
+          "value": null
+        },
+        "text": "\\boxed{{25}}"
+      },
+      {
+        "expected_error": "invalid_ascii_integer",
+        "expected_value": null,
+        "result": {
+          "command_offset": 0,
+          "content": "1,2",
+          "error": "invalid_ascii_integer",
+          "parsed": false,
+          "value": null
+        },
+        "text": "\\boxed{1,2}"
+      },
+      {
+        "expected_error": "invalid_ascii_integer",
+        "expected_value": null,
+        "result": {
+          "command_offset": 0,
+          "content": "\uff11\uff12",
+          "error": "invalid_ascii_integer",
+          "parsed": false,
+          "value": null
+        },
+        "text": "\\boxed{\uff11\uff12}"
+      },
+      {
+        "expected_error": "invalid_ascii_integer",
+        "expected_value": null,
+        "result": {
+          "command_offset": 0,
+          "content": "\u0661\u0662",
+          "error": "invalid_ascii_integer",
+          "parsed": false,
+          "value": null
+        },
+        "text": "\\boxed{\u0661\u0662}"
+      },
+      {
+        "expected_error": "invalid_ascii_integer",
+        "expected_value": null,
+        "result": {
+          "command_offset": 0,
+          "content": "0000",
+          "error": "invalid_ascii_integer",
+          "parsed": false,
+          "value": null
+        },
+        "text": "\\boxed{0000}"
+      },
+      {
+        "expected_error": "invalid_ascii_integer",
+        "expected_value": null,
+        "result": {
+          "command_offset": 0,
+          "content": "",
+          "error": "invalid_ascii_integer",
+          "parsed": false,
+          "value": null
+        },
+        "text": "\\boxed{}"
+      },
+      {
+        "expected_error": "invalid_ascii_integer",
+        "expected_value": null,
+        "result": {
+          "command_offset": 0,
+          "content": "2+3",
+          "error": "invalid_ascii_integer",
+          "parsed": false,
+          "value": null
+        },
+        "text": "\\boxed{2+3}"
+      },
+      {
+        "expected_error": null,
+        "expected_value": 25,
+        "result": {
+          "command_offset": 0,
+          "content": "25",
+          "error": null,
+          "parsed": true,
+          "value": 25
+        },
+        "text": "\\boxed{25} then truncated reasoning"
+      },
+      {
+        "expected_error": "missing_open_brace",
+        "expected_value": null,
+        "result": {
+          "command_offset": 16,
+          "content": null,
+          "error": "missing_open_brace",
+          "parsed": false,
+          "value": null
+        },
+        "text": "\\boxed{25} then \\boxedness{2}"
+      }
+    ],
+    "boundary_cases_passed": 25,
+    "canonical_tasks": 60,
+    "data_files": {
+      "aime2024.answers.jsonl": {
+        "bytes": 5082,
+        "sha256": "d7a41e847d3ee8ab22897b6c6209b74638a3199a5f14d85c3b5b2d8675cacec0"
+      },
+      "aime2024.questions.jsonl": {
+        "bytes": 24996,
+        "sha256": "48967ed2b5259955fb10f8c36b47ee93a86c3e850538d1209a415304bdd46e05"
+      },
+      "aime2025.answers.jsonl": {
+        "bytes": 4955,
+        "sha256": "03f846b47b4d1d0aa37e27cfac4126a8cf968c0425cd107e87d53e5378b06dbe"
+      },
+      "aime2025.questions.jsonl": {
+        "bytes": 23385,
+        "sha256": "b5230a1ca58a5a6457b73f877cf24094496fe4703dfe9d37e15d9fb9684b51a9"
+      }
+    },
+    "data_manifest_sha256": "8c917d699556d66cd71fcd7f5a8ed13d79da8a6d213eaeef93798082a7c41d67",
+    "extractor_id": "last-boxed-ascii-integer-v1",
+    "interpretation": "Parser/data self-check only; not a model benchmark result.",
+    "model_answers_executed": false,
+    "protocol_sha256": "1a908d00425016eb1bc3eb17b05267da19ab2d81b931abbbfadf0736ae08e380",
+    "rows": [
+      {
+        "canonical": "\\boxed{204}",
+        "correct": true,
+        "gold_sha256": "cbab82b71fc8a9bb86578a0973edea2dd571f4215ec9564a6052e04ca9c474d0",
+        "parsed": {
+          "command_offset": 0,
+          "content": "204",
+          "error": null,
+          "parsed": true,
+          "value": 204
+        },
+        "question_sha256": "40de3e36fcb84aa58186509525206fca18fae251bef3cf8621d8adfabbefca89",
+        "task_id": "AIME2024-I-01"
+      },
+      {
+        "canonical": "\\boxed{25}",
+        "correct": true,
+        "gold_sha256": "f824afab00ac8ec1147b955a57663bb460a7bb36e75e741a5116df1c1b88656d",
+        "parsed": {
+          "command_offset": 0,
+          "content": "25",
+          "error": null,
+          "parsed": true,
+          "value": 25
+        },
+        "question_sha256": "43afc8d2eb636c35477cc9ac8f1db3563134d10673beb9fb808c45dbc3021e51",
+        "task_id": "AIME2024-I-02"
+      },
+      {
+        "canonical": "\\boxed{809}",
+        "correct": true,
+        "gold_sha256": "5622c7965b6ab73291834650383f18b7ffdc41704321db289e8557f07d38b8fd",
+        "parsed": {
+          "command_offset": 0,
+          "content": "809",
+          "error": null,
+          "parsed": true,
+          "value": 809
+        },
+        "question_sha256": "d03cff1d2f5fa63a31ab545f733b29d3e01b55cb8d23ec42d137ca54371d6ac8",
+        "task_id": "AIME2024-I-03"
+      },
+      {
+        "canonical": "\\boxed{116}",
+        "correct": true,
+        "gold_sha256": "c2c45fea284788da5fe90f5462c7810c47808df3b33250b7c5f2f2bc110162b1",
+        "parsed": {
+          "command_offset": 0,
+          "content": "116",
+          "error": null,
+          "parsed": true,
+          "value": 116
+        },
+        "question_sha256": "84c96fbdf01d054c94a152f4fd61e85a4fa70b03eb73d8fd8149760b1cf077eb",
+        "task_id": "AIME2024-I-04"
+      },
+      {
+        "canonical": "\\boxed{104}",
+        "correct": true,
+        "gold_sha256": "eabff59acdb2afed5134f45be3d8e89144e1042a9f07f4405ff7da6dad245183",
+        "parsed": {
+          "command_offset": 0,
+          "content": "104",
+          "error": null,
+          "parsed": true,
+          "value": 104
+        },
+        "question_sha256": "5650d2a0767a53a577e51aab7a9b3cafb4f91562ad2544bb088c6cfc577cf364",
+        "task_id": "AIME2024-I-05"
+      },
+      {
+        "canonical": "\\boxed{294}",
+        "correct": true,
+        "gold_sha256": "9ae8bbf8e1808cfa6241614ce1d5cb22f705342d841ab6da44bf172e70bb47e1",
+        "parsed": {
+          "command_offset": 0,
+          "content": "294",
+          "error": null,
+          "parsed": true,
+          "value": 294
+        },
+        "question_sha256": "c0aff28b8c4a645b43550e5d0d3fabf80ff7528b406514fcd898152683edce36",
+        "task_id": "AIME2024-I-06"
+      },
+      {
+        "canonical": "\\boxed{540}",
+        "correct": true,
+        "gold_sha256": "45bc238a16604a15534b476214f083796160509bf1fb336148b6a290e206a2c9",
+        "parsed": {
+          "command_offset": 0,
+          "content": "540",
+          "error": null,
+          "parsed": true,
+          "value": 540
+        },
+        "question_sha256": "2347acb5eb3b35f1aa81bb03fa72115a21175fe3c04f58b7d13191b67531cd47",
+        "task_id": "AIME2024-I-07"
+      },
+      {
+        "canonical": "\\boxed{197}",
+        "correct": true,
+        "gold_sha256": "c8fd3162444813e0e325a045f8bf0f447e4b39e3f663c5bcb95a48e8ca2bdf4c",
+        "parsed": {
+          "command_offset": 0,
+          "content": "197",
+          "error": null,
+          "parsed": true,
+          "value": 197
+        },
+        "question_sha256": "d7b202873c9ff78edfbcd97652c0093c68f53f7582c9b20614780fe7288a87a7",
+        "task_id": "AIME2024-I-08"
+      },
+      {
+        "canonical": "\\boxed{480}",
+        "correct": true,
+        "gold_sha256": "e1c7ad725ad6824548e6070ab2b53f41d87e38dec982cfd1e3e4096e53e8fd44",
+        "parsed": {
+          "command_offset": 0,
+          "content": "480",
+          "error": null,
+          "parsed": true,
+          "value": 480
+        },
+        "question_sha256": "2ee7203cbfbc18d4308cd9177214f29508e97536a970213b931c82159e2a2eb4",
+        "task_id": "AIME2024-I-09"
+      },
+      {
+        "canonical": "\\boxed{113}",
+        "correct": true,
+        "gold_sha256": "3bf31f75cf61399b703e04b28aea08ad3bc59a7e199360772a5a8725258d81b8",
+        "parsed": {
+          "command_offset": 0,
+          "content": "113",
+          "error": null,
+          "parsed": true,
+          "value": 113
+        },
+        "question_sha256": "6c7d2070f985c4e7be6467b4bf365f372d64e3b314183113880bb2e4a07f32c2",
+        "task_id": "AIME2024-I-10"
+      },
+      {
+        "canonical": "\\boxed{371}",
+        "correct": true,
+        "gold_sha256": "c065da5233de5d48f284bcc553e224198e75e6c22d890b70b1fdf63f01e2af99",
+        "parsed": {
+          "command_offset": 0,
+          "content": "371",
+          "error": null,
+          "parsed": true,
+          "value": 371
+        },
+        "question_sha256": "015197614be4299c0d123c77d987526109a9b3b9a79f8568636d29c775323e24",
+        "task_id": "AIME2024-I-11"
+      },
+      {
+        "canonical": "\\boxed{385}",
+        "correct": true,
+        "gold_sha256": "92d3b25fc6c027fd08273eacc01818f61824b6f2dfc76eb35f27290b1977b1f0",
+        "parsed": {
+          "command_offset": 0,
+          "content": "385",
+          "error": null,
+          "parsed": true,
+          "value": 385
+        },
+        "question_sha256": "d965cc0c83096dce50f756ecdd29990c906370987a63d3a8d0fd03d875ac6b3b",
+        "task_id": "AIME2024-I-12"
+      },
+      {
+        "canonical": "\\boxed{110}",
+        "correct": true,
+        "gold_sha256": "18b29dc9c3bf2cbf8cd6903fa11e63fc8bfc7094d2369bbf393e60909eaabdd1",
+        "parsed": {
+          "command_offset": 0,
+          "content": "110",
+          "error": null,
+          "parsed": true,
+          "value": 110
+        },
+        "question_sha256": "4827451ee78b173fce0a2b248a10c01442ec7346d87aba46c59a0ad1218f71ed",
+        "task_id": "AIME2024-I-13"
+      },
+      {
+        "canonical": "\\boxed{104}",
+        "correct": true,
+        "gold_sha256": "3256ad1052cf31d31701df70465528ec7be0104e865512a0d021c6d88e9ec8ba",
+        "parsed": {
+          "command_offset": 0,
+          "content": "104",
+          "error": null,
+          "parsed": true,
+          "value": 104
+        },
+        "question_sha256": "d8c514307d5e703048cb5b6165cf10c78d771e2166f107f48b586d9289d2e736",
+        "task_id": "AIME2024-I-14"
+      },
+      {
+        "canonical": "\\boxed{721}",
+        "correct": true,
+        "gold_sha256": "c3b680b6ad677b69cb7c4c7cbc384d08073906ed6306e646812b12d82d2b9d82",
+        "parsed": {
+          "command_offset": 0,
+          "content": "721",
+          "error": null,
+          "parsed": true,
+          "value": 721
+        },
+        "question_sha256": "7f3d2be0982807560fb814e16f111ef6e38f04e32a108355530732c9c64c22fb",
+        "task_id": "AIME2024-I-15"
+      },
+      {
+        "canonical": "\\boxed{73}",
+        "correct": true,
+        "gold_sha256": "7341276069737ed8471016a862f5145ee1605351458eb6a17b26b3f063085ba3",
+        "parsed": {
+          "command_offset": 0,
+          "content": "73",
+          "error": null,
+          "parsed": true,
+          "value": 73
+        },
+        "question_sha256": "d7c47fba84b4bcd1b0fac5a069b1924a7827f3b015be620b42ae4c4e729d33b3",
+        "task_id": "AIME2024-II-01"
+      },
+      {
+        "canonical": "\\boxed{236}",
+        "correct": true,
+        "gold_sha256": "2e09490b4acaac38c7c3948b0cc6bd95b87475b4e590665d5fa0cc764c2fd055",
+        "parsed": {
+          "command_offset": 0,
+          "content": "236",
+          "error": null,
+          "parsed": true,
+          "value": 236
+        },
+        "question_sha256": "21db44a1eb19aba4568c77a3a1c623e7e57485539a76265b43902887364f6ef3",
+        "task_id": "AIME2024-II-02"
+      },
+      {
+        "canonical": "\\boxed{45}",
+        "correct": true,
+        "gold_sha256": "fd729e5ad3fa77ca9d018ca4266cc470aa23bf668e98591789a1abff3c4d17d8",
+        "parsed": {
+          "command_offset": 0,
+          "content": "45",
+          "error": null,
+          "parsed": true,
+          "value": 45
+        },
+        "question_sha256": "4ac3065bc26a845b46441d6ac16384a62e01f9a7c595720272bbc0b316201e6d",
+        "task_id": "AIME2024-II-03"
+      },
+      {
+        "canonical": "\\boxed{33}",
+        "correct": true,
+        "gold_sha256": "9bdc421d8511c04ccb5d39d85376d950bbe8e9b224dc3a31bd2106bd41e81dc5",
+        "parsed": {
+          "command_offset": 0,
+          "content": "33",
+          "error": null,
+          "parsed": true,
+          "value": 33
+        },
+        "question_sha256": "f785f38899d11791997f4c396dcf950e2979673d372c77988fd0379684b00927",
+        "task_id": "AIME2024-II-04"
+      },
+      {
+        "canonical": "\\boxed{80}",
+        "correct": true,
+        "gold_sha256": "bf556005ee300f0831e93795f078801f2af911689e8fc8f16bbfac279b7af979",
+        "parsed": {
+          "command_offset": 0,
+          "content": "80",
+          "error": null,
+          "parsed": true,
+          "value": 80
+        },
+        "question_sha256": "01f4378fc0aa8d4ad347260572db3350ecd0f93dff0e7f2847c7610963cae0b5",
+        "task_id": "AIME2024-II-05"
+      },
+      {
+        "canonical": "\\boxed{55}",
+        "correct": true,
+        "gold_sha256": "f84638217568caceadc470d452871c2a3c6a784dd0023b1bab44d46147a92bdc",
+        "parsed": {
+          "command_offset": 0,
+          "content": "55",
+          "error": null,
+          "parsed": true,
+          "value": 55
+        },
+        "question_sha256": "7d2b9ecfeeda92b9e2676414566a0300c9239ff15fac1139ad56d6c35c9d84fc",
+        "task_id": "AIME2024-II-06"
+      },
+      {
+        "canonical": "\\boxed{699}",
+        "correct": true,
+        "gold_sha256": "5e8fe88147bf43fe3fc8ba6bcb42f4f572eb0782b77d8b159711bf9013506cb0",
+        "parsed": {
+          "command_offset": 0,
+          "content": "699",
+          "error": null,
+          "parsed": true,
+          "value": 699
+        },
+        "question_sha256": "10c80ba48d1803c48df550827e6e2c3b4b8ef3e0aba30c507798eabf30aeea2e",
+        "task_id": "AIME2024-II-07"
+      },
+      {
+        "canonical": "\\boxed{127}",
+        "correct": true,
+        "gold_sha256": "9320f98cf9c77aaadff63ddddeeeecdd33defcfd28e67e3a6f99e02123a11aeb",
+        "parsed": {
+          "command_offset": 0,
+          "content": "127",
+          "error": null,
+          "parsed": true,
+          "value": 127
+        },
+        "question_sha256": "3c4b599aa92bcd8347ba4bbf4a1bf1fc265c43dd6cc93810df56af814fc2a619",
+        "task_id": "AIME2024-II-08"
+      },
+      {
+        "canonical": "\\boxed{902}",
+        "correct": true,
+        "gold_sha256": "8e41779a07a0345bf8347e934fcf94d7d857644e04bf3a663db7b58ed321da3c",
+        "parsed": {
+          "command_offset": 0,
+          "content": "902",
+          "error": null,
+          "parsed": true,
+          "value": 902
+        },
+        "question_sha256": "ff87a2102c1306454be6971f889b8bdc3029ec474c559e919e00233bcb4bb41f",
+        "task_id": "AIME2024-II-09"
+      },
+      {
+        "canonical": "\\boxed{468}",
+        "correct": true,
+        "gold_sha256": "5c8ac560e9cc67dfb6dba2cd08ee449fa0541ab1aba3930fe2b1f45a35e87a0e",
+        "parsed": {
+          "command_offset": 0,
+          "content": "468",
+          "error": null,
+          "parsed": true,
+          "value": 468
+        },
+        "question_sha256": "357603fe2192e4dc2b2a52cc90ade2f1f6a3fd452ceec23c194e28a3748e579b",
+        "task_id": "AIME2024-II-10"
+      },
+      {
+        "canonical": "\\boxed{601}",
+        "correct": true,
+        "gold_sha256": "f7abcd261533c491f4482394cf61c1ff20ecce62723e0f2bb7473badcac8e0d5",
+        "parsed": {
+          "command_offset": 0,
+          "content": "601",
+          "error": null,
+          "parsed": true,
+          "value": 601
+        },
+        "question_sha256": "89a3d7b0f4c73a63119f6c1a2bec8ed68f39a8f5d4a3e5ebb12d89eb8b47e857",
+        "task_id": "AIME2024-II-11"
+      },
+      {
+        "canonical": "\\boxed{23}",
+        "correct": true,
+        "gold_sha256": "0aaf6fec1f8c2883bf785693104a68e28573fa22e1bf073093e117bc77e662f3",
+        "parsed": {
+          "command_offset": 0,
+          "content": "23",
+          "error": null,
+          "parsed": true,
+          "value": 23
+        },
+        "question_sha256": "bb57bbb4f19d36094fcb0392d8ef63461045fac1aa02c1bc063102c072f3452a",
+        "task_id": "AIME2024-II-12"
+      },
+      {
+        "canonical": "\\boxed{321}",
+        "correct": true,
+        "gold_sha256": "d9cbf91671cde63f1f4be87017f17b838089431f81c7678b595b240577c4b76b",
+        "parsed": {
+          "command_offset": 0,
+          "content": "321",
+          "error": null,
+          "parsed": true,
+          "value": 321
+        },
+        "question_sha256": "2ae7df54989b82f448fff0d86e5d1996f777a9f6100bbbe8a6fb99ebe661bc4a",
+        "task_id": "AIME2024-II-13"
+      },
+      {
+        "canonical": "\\boxed{211}",
+        "correct": true,
+        "gold_sha256": "84c10e259dde08bce9f907cad157929658e8f79a18a01e654c03a3c8498cda3d",
+        "parsed": {
+          "command_offset": 0,
+          "content": "211",
+          "error": null,
+          "parsed": true,
+          "value": 211
+        },
+        "question_sha256": "692d35427467a74f07dff2b65afbcc2874995945b5ee044320ff04af46ca3187",
+        "task_id": "AIME2024-II-14"
+      },
+      {
+        "canonical": "\\boxed{315}",
+        "correct": true,
+        "gold_sha256": "48e5ab06a552662a2c02b635f94d4ce44b211cc5a07cc421846d8aa77305ac61",
+        "parsed": {
+          "command_offset": 0,
+          "content": "315",
+          "error": null,
+          "parsed": true,
+          "value": 315
+        },
+        "question_sha256": "b0dd5c5ca3f5c6fe3279b6b867b1f47095cae459cf46b917119fc337d2d5298a",
+        "task_id": "AIME2024-II-15"
+      },
+      {
+        "canonical": "\\boxed{70}",
+        "correct": true,
+        "gold_sha256": "c8f90a4f92c5bcd81238ccffe6f40015cc8c5a18190d8fa9c2fcd3be1bd9ba25",
+        "parsed": {
+          "command_offset": 0,
+          "content": "70",
+          "error": null,
+          "parsed": true,
+          "value": 70
+        },
+        "question_sha256": "a3145c72cb6b4a78a74d3e97d669d29a5eeb277efb9f6492e9873d0d3fbfd0c4",
+        "task_id": "AIME2025-I-01"
+      },
+      {
+        "canonical": "\\boxed{588}",
+        "correct": true,
+        "gold_sha256": "721fcb2583fbba8f362268ea98ecf36c48cb7de2c630bcf4f456818edec6b31a",
+        "parsed": {
+          "command_offset": 0,
+          "content": "588",
+          "error": null,
+          "parsed": true,
+          "value": 588
+        },
+        "question_sha256": "9592e82151960bdda3419ee55f677a8fb7a54bbbc762295146f0c43653c7ae08",
+        "task_id": "AIME2025-I-02"
+      },
+      {
+        "canonical": "\\boxed{16}",
+        "correct": true,
+        "gold_sha256": "b5c22144078a74012c58dceae9b0ee270d0ea99f0892158968c6a2c59a78ec26",
+        "parsed": {
+          "command_offset": 0,
+          "content": "16",
+          "error": null,
+          "parsed": true,
+          "value": 16
+        },
+        "question_sha256": "9cbaa17c63e148e9e5181c863126a70357a4b57665ac2bc0c18e7f62d1d02ae7",
+        "task_id": "AIME2025-I-03"
+      },
+      {
+        "canonical": "\\boxed{117}",
+        "correct": true,
+        "gold_sha256": "311459ad250c5ebf2a6a3fc91a0178b32d65e722f4528f20e1cba4bd8f7ec692",
+        "parsed": {
+          "command_offset": 0,
+          "content": "117",
+          "error": null,
+          "parsed": true,
+          "value": 117
+        },
+        "question_sha256": "981c7f2ec58bbc629a520abdcc2d49c69ec86d2c6b2bc574b71d50c2d1dcce0e",
+        "task_id": "AIME2025-I-04"
+      },
+      {
+        "canonical": "\\boxed{279}",
+        "correct": true,
+        "gold_sha256": "83b0aaa1c009cbb792730642d6aecbfe42e9b2632b7a7a76c8b4297238eabf63",
+        "parsed": {
+          "command_offset": 0,
+          "content": "279",
+          "error": null,
+          "parsed": true,
+          "value": 279
+        },
+        "question_sha256": "7528e62e74eabdd96e6c6e3f542e9076010c55bf9be70e28509b4c8672b20141",
+        "task_id": "AIME2025-I-05"
+      },
+      {
+        "canonical": "\\boxed{504}",
+        "correct": true,
+        "gold_sha256": "8e7a868ad15b0128c721279ae0823761ba7161e7308d83d57de33bad318b8ee8",
+        "parsed": {
+          "command_offset": 0,
+          "content": "504",
+          "error": null,
+          "parsed": true,
+          "value": 504
+        },
+        "question_sha256": "e93030b1d230e502eae5dddccd7842785712efef67c817d1a3d99f7a66ac2c6a",
+        "task_id": "AIME2025-I-06"
+      },
+      {
+        "canonical": "\\boxed{821}",
+        "correct": true,
+        "gold_sha256": "0cc19c812484d54428e8fed1681584005feffa1c5fb818cc5890b593f25482a0",
+        "parsed": {
+          "command_offset": 0,
+          "content": "821",
+          "error": null,
+          "parsed": true,
+          "value": 821
+        },
+        "question_sha256": "70629b6e7c5db3e713f2672a9355856d2fc7b17285add34b1f7fd1d289c9e173",
+        "task_id": "AIME2025-I-07"
+      },
+      {
+        "canonical": "\\boxed{77}",
+        "correct": true,
+        "gold_sha256": "4269b65020b0057e21e4b5f3e63749a6e4d77e62c75063d37ccd1898081ca1a7",
+        "parsed": {
+          "command_offset": 0,
+          "content": "77",
+          "error": null,
+          "parsed": true,
+          "value": 77
+        },
+        "question_sha256": "b552420b5a189e451a355947aa0e6b76fa645c8c58a515706f995299cb7738bf",
+        "task_id": "AIME2025-I-08"
+      },
+      {
+        "canonical": "\\boxed{62}",
+        "correct": true,
+        "gold_sha256": "59c0484012747092e2ef27a2a7b3afc43ebe2757a8dd22fdb8a5219f77277194",
+        "parsed": {
+          "command_offset": 0,
+          "content": "62",
+          "error": null,
+          "parsed": true,
+          "value": 62
+        },
+        "question_sha256": "edc7cd228836a0fe7ec28eaf718b0f93933984b9e36768f3d553abeecce353c8",
+        "task_id": "AIME2025-I-09"
+      },
+      {
+        "canonical": "\\boxed{81}",
+        "correct": true,
+        "gold_sha256": "0375306839f51bb37ef1c537001462ea2c03f67bb3df606f67c8a2f9d5bd2289",
+        "parsed": {
+          "command_offset": 0,
+          "content": "81",
+          "error": null,
+          "parsed": true,
+          "value": 81
+        },
+        "question_sha256": "07ac5ca7cecdf07567088089e7d3f0ea83adaa28d2a1fd7889c063fd1f37ccd3",
+        "task_id": "AIME2025-I-10"
+      },
+      {
+        "canonical": "\\boxed{259}",
+        "correct": true,
+        "gold_sha256": "5771fcad08a2969f0f0fb48865e1bf282ff44c72f1f4cc0089f8055f59fe8af0",
+        "parsed": {
+          "command_offset": 0,
+          "content": "259",
+          "error": null,
+          "parsed": true,
+          "value": 259
+        },
+        "question_sha256": "1352bde57c17a969982b9342711da1bea4dbabf0221ae015d0c206ec2f9e30f6",
+        "task_id": "AIME2025-I-11"
+      },
+      {
+        "canonical": "\\boxed{510}",
+        "correct": true,
+        "gold_sha256": "4aab8e00bff1bf1576316b181bd88fa87095b7e1068beae769d4d1c34ad2ceb7",
+        "parsed": {
+          "command_offset": 0,
+          "content": "510",
+          "error": null,
+          "parsed": true,
+          "value": 510
+        },
+        "question_sha256": "3f8dfc841f2252d6ead5580eb868d9b1353e17853624fb86cb19d062e5f5ca4d",
+        "task_id": "AIME2025-I-12"
+      },
+      {
+        "canonical": "\\boxed{204}",
+        "correct": true,
+        "gold_sha256": "4cc57643664885d8cf0930ca71b720c7279ace3b6878d646093feb74e6bc3fb9",
+        "parsed": {
+          "command_offset": 0,
+          "content": "204",
+          "error": null,
+          "parsed": true,
+          "value": 204
+        },
+        "question_sha256": "12f6b189436fb26a05fb496fe738000647c1cb210b7c9f446b3338be418ff094",
+        "task_id": "AIME2025-I-13"
+      },
+      {
+        "canonical": "\\boxed{60}",
+        "correct": true,
+        "gold_sha256": "1da6ddf109e0dee1626ccb82ff3ed41031ffa67a60a7c7ebd3037cd170602ca3",
+        "parsed": {
+          "command_offset": 0,
+          "content": "60",
+          "error": null,
+          "parsed": true,
+          "value": 60
+        },
+        "question_sha256": "9bfdf6197204f5f62f8d1bd46d08dc4f00be90edec9bfce1ac2b64bbc25d4c6e",
+        "task_id": "AIME2025-I-14"
+      },
+      {
+        "canonical": "\\boxed{735}",
+        "correct": true,
+        "gold_sha256": "426afcf1567a38f140d8ffc8cd919f74ea999ca64ff8620d16730a72facb8f2b",
+        "parsed": {
+          "command_offset": 0,
+          "content": "735",
+          "error": null,
+          "parsed": true,
+          "value": 735
+        },
+        "question_sha256": "cc2ed8965f94de942349cffa030efc9816ce451789fc245ad4abcbc009819e1a",
+        "task_id": "AIME2025-I-15"
+      },
+      {
+        "canonical": "\\boxed{468}",
+        "correct": true,
+        "gold_sha256": "41c96ee9c41a09b9b2e0588b73d6c04471615f4c81d092934715bb7f78a317ef",
+        "parsed": {
+          "command_offset": 0,
+          "content": "468",
+          "error": null,
+          "parsed": true,
+          "value": 468
+        },
+        "question_sha256": "aa6399130b64e6a0447fc114a07afb7125a71237472ea6f12051bf36f62f9d77",
+        "task_id": "AIME2025-II-01"
+      },
+      {
+        "canonical": "\\boxed{49}",
+        "correct": true,
+        "gold_sha256": "9e56080fb62ea67cee3c3c82a1c82dff60ec0bae7963b461b6062c2c9e42d7fc",
+        "parsed": {
+          "command_offset": 0,
+          "content": "49",
+          "error": null,
+          "parsed": true,
+          "value": 49
+        },
+        "question_sha256": "ca1a4c4ffd58d84af5848729c0a56fb0a727efc3ca9c79d36ba46d719d5f72e1",
+        "task_id": "AIME2025-II-02"
+      },
+      {
+        "canonical": "\\boxed{82}",
+        "correct": true,
+        "gold_sha256": "9d6e6065caa67f24709bbe48ab9fd9fc1aed5c1992ce5f372a9d6c405248e173",
+        "parsed": {
+          "command_offset": 0,
+          "content": "82",
+          "error": null,
+          "parsed": true,
+          "value": 82
+        },
+        "question_sha256": "951031f375bc05ca792f45e75f51e81f67054c08c48c30225d3c269cba80e733",
+        "task_id": "AIME2025-II-03"
+      },
+      {
+        "canonical": "\\boxed{106}",
+        "correct": true,
+        "gold_sha256": "a2b6869ac3e614a52b2f019fe804a3e4406059a8953aa6ca64ae8a01f38b92ad",
+        "parsed": {
+          "command_offset": 0,
+          "content": "106",
+          "error": null,
+          "parsed": true,
+          "value": 106
+        },
+        "question_sha256": "f2ead5cf02d541329d51e629025732cf868971ff770386f961aaab39eed0b172",
+        "task_id": "AIME2025-II-04"
+      },
+      {
+        "canonical": "\\boxed{336}",
+        "correct": true,
+        "gold_sha256": "90bb42056b2bcb12728ab6f01ab6ccbea94822662ea9d3442230d6c38366da04",
+        "parsed": {
+          "command_offset": 0,
+          "content": "336",
+          "error": null,
+          "parsed": true,
+          "value": 336
+        },
+        "question_sha256": "757329975fcc4a0df83dd88a44c25217dc18c4aab9c3e2b3c4efe98ef4fcb22b",
+        "task_id": "AIME2025-II-05"
+      },
+      {
+        "canonical": "\\boxed{293}",
+        "correct": true,
+        "gold_sha256": "e76859826b17e260a60cf8ef888939acc9f7bbd98ffce7d8a2a95feaf39977d9",
+        "parsed": {
+          "command_offset": 0,
+          "content": "293",
+          "error": null,
+          "parsed": true,
+          "value": 293
+        },
+        "question_sha256": "596ba4660f86c56a92b3ee64c2caf803865c1589deb8c2a1a6e471ed83695401",
+        "task_id": "AIME2025-II-06"
+      },
+      {
+        "canonical": "\\boxed{237}",
+        "correct": true,
+        "gold_sha256": "01da41cc4368afc1ca891a94a17c4c9461e4e4ec3a196cc4d74b4bc41a16d3ab",
+        "parsed": {
+          "command_offset": 0,
+          "content": "237",
+          "error": null,
+          "parsed": true,
+          "value": 237
+        },
+        "question_sha256": "1a1a3f553410c1d0a02789bf64215b5d8094b0d3b95bf01d2961177e8982b48b",
+        "task_id": "AIME2025-II-07"
+      },
+      {
+        "canonical": "\\boxed{610}",
+        "correct": true,
+        "gold_sha256": "7fd5c8a8448e8fb92975a25cec6a211015cc5a6d1e7d932198698835e400b471",
+        "parsed": {
+          "command_offset": 0,
+          "content": "610",
+          "error": null,
+          "parsed": true,
+          "value": 610
+        },
+        "question_sha256": "dac11627201ea0d253903fcee1537661ca88b83499fea9d02a7d596af79550ab",
+        "task_id": "AIME2025-II-08"
+      },
+      {
+        "canonical": "\\boxed{149}",
+        "correct": true,
+        "gold_sha256": "b5e984c186a1b7a0f336bc37e5d284976cd6497292904f6a52b45353070f64aa",
+        "parsed": {
+          "command_offset": 0,
+          "content": "149",
+          "error": null,
+          "parsed": true,
+          "value": 149
+        },
+        "question_sha256": "656d1b5d0105f71eb14aced1dfa5b1eaa8d9a087cc8e434da877ad2c01870de5",
+        "task_id": "AIME2025-II-09"
+      },
+      {
+        "canonical": "\\boxed{907}",
+        "correct": true,
+        "gold_sha256": "6f5ef867422487c081d74f2650a6df61c9192e81c934ed4502455158acbb9777",
+        "parsed": {
+          "command_offset": 0,
+          "content": "907",
+          "error": null,
+          "parsed": true,
+          "value": 907
+        },
+        "question_sha256": "a7f58aabb0a8393f9c5d00fb3ba6df269ecd0fca3e5f447b0402ab0facb6d3ad",
+        "task_id": "AIME2025-II-10"
+      },
+      {
+        "canonical": "\\boxed{113}",
+        "correct": true,
+        "gold_sha256": "2a06393c23f41754bb0c630f2309d815f0af2c50fe54423176e486a0b2e97da2",
+        "parsed": {
+          "command_offset": 0,
+          "content": "113",
+          "error": null,
+          "parsed": true,
+          "value": 113
+        },
+        "question_sha256": "755f37ac64c45cd71e3e6d556bed121a74b02b22dca1855b3d76ce7e44e1964b",
+        "task_id": "AIME2025-II-11"
+      },
+      {
+        "canonical": "\\boxed{19}",
+        "correct": true,
+        "gold_sha256": "0f0b8c3760782359132a77b1975191f28aa332d2eba34261275b8ac99d72ce4b",
+        "parsed": {
+          "command_offset": 0,
+          "content": "19",
+          "error": null,
+          "parsed": true,
+          "value": 19
+        },
+        "question_sha256": "5997376b7b910b0e745067c7631f89d007c8f520a11ba656e15181eb0d45e3ab",
+        "task_id": "AIME2025-II-12"
+      },
+      {
+        "canonical": "\\boxed{248}",
+        "correct": true,
+        "gold_sha256": "a305e65ee43cfd0bf8e5bf5b87fa743686996afe2ab91a2da89033f452564ab3",
+        "parsed": {
+          "command_offset": 0,
+          "content": "248",
+          "error": null,
+          "parsed": true,
+          "value": 248
+        },
+        "question_sha256": "f502486d6092e47973970eaee0e8bfc2dc22ea4bd094533958b5ea71683c67cf",
+        "task_id": "AIME2025-II-13"
+      },
+      {
+        "canonical": "\\boxed{104}",
+        "correct": true,
+        "gold_sha256": "e9a363c4f76c1a920f6345520a4a8247e3bd2657b2c47b1492234adc98505681",
+        "parsed": {
+          "command_offset": 0,
+          "content": "104",
+          "error": null,
+          "parsed": true,
+          "value": 104
+        },
+        "question_sha256": "ed910555a62ce77895b83babe2779d049772d20cc13c1fdcecc116d97abd9ae4",
+        "task_id": "AIME2025-II-14"
+      },
+      {
+        "canonical": "\\boxed{240}",
+        "correct": true,
+        "gold_sha256": "d294cacdc447533248640292b11c062c836da45a18ba6c670a7f9b2c1f69bded",
+        "parsed": {
+          "command_offset": 0,
+          "content": "240",
+          "error": null,
+          "parsed": true,
+          "value": 240
+        },
+        "question_sha256": "5929f4e54395fb2b0307ee301f378585b1ab7198464ade7e5b24d85fe997ba64",
+        "task_id": "AIME2025-II-15"
+      }
+    ],
+    "scorer_helpers": "Python standard library only",
+    "scorer_source_sha256": "b67e20d1724af0a5344d944d63eef119639e5fbd4f4dc9e0d11251a896c6a618",
+    "status": "PASS"
+  },
+  "full_480_per_arm_verified": true,
+  "source_comparison_sha256": "d77a16e7b0f12248b16b36762719cbccb45cc86c0fa05072a43aebae8b916136",
+  "independent_verification_sha256": "234dce0585160a9621674143cd31bafcb9a1482abc1e08444a984b291cc1ddd9",
+  "plan_sha256": "59159a012f56cac909d122c9e502464f2e148d19c0a615418487de3ca7672a60",
+  "verification": {
+    "raw_files_verified": 661,
+    "source_files_verified": 491
+  },
+  "protocol": {
+    "backend": "vLLM 0.13.0",
+    "dtype": "BF16",
+    "batch_size": 2,
+    "temperature": 1,
+    "top_p": 0.7,
+    "max_new_tokens": 8192,
+    "depth": 4,
+    "early_readout": 1,
+    "adaptive_cap": 1.0
+  },
+  "limitation": "Full raw outputs independently re-scored locally. Positive gain, but scores and gain are below the paper; author runtime identity is unverified."
+}

@@ -2,7 +2,7 @@
   "updated": "2026-10-05",
   "scope": "Figure 1b only",
   "paper": "https://arxiv.org/abs/2610.02185",
-  "completed": 6,
+  "completed": 7,
   "rows": [
     {
       "id": "aime-26",
@@ -37,12 +37,16 @@
       "depth": 4,
       "reference": 1,
       "coefficient": 1.0,
-      "status": "in_progress",
-      "baseline_correct": null,
-      "loopcd_correct": null,
-      "baseline_percent": null,
-      "loopcd_percent": null,
-      "delta_pp": null
+      "status": "complete",
+      "baseline_correct": 168,
+      "loopcd_correct": 195,
+      "baseline_percent": 35.0,
+      "loopcd_percent": 40.625,
+      "delta_pp": 5.625,
+      "samples_per_problem": 16,
+      "samples_per_arm": 480,
+      "evidence": "evidence/aime-14.json",
+      "evidence_sha256": "a340850731321bdafc909c637d9b9ce83280d4fcc583e315dc43e804491316e0"
     },
     {
       "id": "huginn-r32",
@@ -180,7 +184,7 @@
   ],
   "limitations": [
     "No claim of exact paper-score replication.",
-    "Two AIME rows are still in progress; no partial score substituted.",
+    "Ouro-2.6B AIME is still in progress; no partial score substituted.",
     "Public evidence contains validated statistical extracts, not the full raw outputs or historical gate certificates."
   ]
 }

@@ -2,7 +2,7 @@
 
 An independent reproduction of **[Decoding Looped Transformers Better for (Almost) Free](https://arxiv.org/abs/2610.02185)**, focused on the eight same-depth comparisons in **Figure 1b**.
 
-**Status — October 5, 2026:** six comparisons are complete; two AIME comparisons are running. Five completed comparisons improve over their paired baseline; Huginn R32 shows no gain. This is a partial reproduction, not a claim that the paper's scores have been matched. This repository is not affiliated with Apple.
+**Status — October 5, 2026:** seven comparisons are complete; Ouro-2.6B AIME is still running. Six completed comparisons improve over their paired baseline; Huginn R32 shows no gain. This is a partial reproduction, not a claim that the paper's scores have been matched. This repository is not affiliated with Apple.
 
 ## Results
 
@@ -12,7 +12,7 @@ Scores are percentages; Δ is an absolute percentage-point change. Code tasks us
 | Benchmark | Model | Paper baseline → LoopCD | Ours baseline → LoopCD | Δ paper / ours |
 |---|---|---:|---:|---:|
 | AIME 2024 | Ouro-2.6B Thinking | 61.88 → 73.33 | Running | +11.45 / — |
-| AIME 2024 | Ouro-1.4B Thinking | 50.83 → 59.17 | Running | +8.34 / — |
+| AIME 2024 | Ouro-1.4B Thinking | 50.83 → 59.17 | 35.00 → 40.63 | +8.34 / +5.63 |
 | HumanEval | Huginn R32 | 22.56 → 31.71 | 27.44 → 27.44 | +9.15 / +0.00 |
 | HumanEval | Huginn R16 | 20.12 → 28.05 | 22.56 → 26.22 | +7.93 / +3.66 |
 | HumanEval | Ouro-2.6B | 75.61 → 79.88 | 73.78 → 80.49 | +4.27 / +6.71 |
@@ -20,6 +20,8 @@ Scores are percentages; Δ is an absolute percentage-point change. Code tasks us
 | HellaSwag | Parcae-1.3B | 55.93 → 60.44 | 56.12 → 60.34 | +4.51 / +4.21 |
 | MBPP | Looped-Qwen3 | 66.14 → 70.11 | 65.87 → 69.05 | +3.97 / +3.17 |
 <!-- RESULTS:END -->
+
+On AIME, Ouro-1.4B improves from 168 to 195 correct samples out of 480 per arm: **+5.625 percentage points** across all 30 problems. The improvement is smaller than the paper’s +8.34, and both scores are lower.
 
 For Looped-Qwen3, we built our own implementation from the paper, so the setup may differ from the authors’. We didn’t see a gain on Huginn R32. Our [experiment notes](docs/protocols.md) explain the model settings and how we ran each test.
 

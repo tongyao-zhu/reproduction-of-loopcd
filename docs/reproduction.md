@@ -8,7 +8,7 @@ There are three levels here: inspect the published statistics, use the tested ad
 python scripts/verify_results.py
 ```
 
-This needs only Python. It verifies the evidence-file hashes, all six task counts and deltas, paired wins/losses/ties, and that the two pending rows contain no invented scores. It also checks the README table against the JSON. It does not reproduce model inference.
+This needs only Python. It verifies the evidence-file hashes, all seven completed comparisons, including AIME’s 30 × 16 sample counts and deltas, paired wins/losses/ties, and that the remaining pending row contains no invented score. It also checks the README table against the JSON. It does not reproduce model inference.
 
 ## 2. Install and check the adapters
 
