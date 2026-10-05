@@ -21,9 +21,9 @@ Scores are percentages; Δ is an absolute percentage-point change. Code tasks us
 | MBPP | Looped-Qwen3 | 66.14 → 70.11 | 65.87 → 69.05 | +3.97 / +3.17 |
 <!-- RESULTS:END -->
 
-The Looped-Qwen3 row uses a documented **independent reconstruction** of the checkpoint/cache setup. It does not establish the identity of the authors' implementation. The Huginn R32 negative result is retained. Prompt, stopping, initialization and backend differences limit direct numerical comparison; see [protocols and limitations](docs/protocols.md).
+For Looped-Qwen3, we built our own implementation from the paper, so the setup may differ from the authors’. We didn’t see a gain on Huginn R32. Our [experiment notes](docs/protocols.md) explain the model settings and how we ran each test.
 
-[Machine-readable results](results/figure1b.json) · [Statistical evidence](results/evidence) · [Reproduction guide](docs/reproduction.md)
+[Detailed results](results/evidence) · [Download results (JSON)](results/figure1b.json) · [Run the experiments](docs/reproduction.md)
 
 ## Method
 
