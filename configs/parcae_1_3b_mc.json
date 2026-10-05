@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "protocol": "parcae_mc_v1",
+  "arxiv": "2610.02185v1",
+  "repo_id": "SandyResearch/parcae-1.3b",
+  "revision": "517f8e6add927e3d73e15beec13a5b500537b9cc",
+  "tokenizer_revision": "6247b5d0592876b73660f34c2dd16c9db9e9045c",
+  "native_source_revision": "69284c13746e849104f738d6d1a347b1f457df76",
+  "harness_commit": "7ddb2b1e4bc819292ff56f334c572d1fc77dec28",
+  "seed": 42,
+  "batch_size": 1,
+  "max_length": 2048,
+  "use_cache": false,
+  "logits_cache": false,
+  "chat_template": false,
+  "add_bos": false,
+  "truncation": "left_keep_2049_then_remove_last_token",
+  "mmlu_expected_subjects": 57,
+  "tasks": {"sciq": 0, "piqa": 0, "arc_challenge": 25, "arc_easy": 0, "hellaswag": 0, "winogrande": 0, "mmlu": 5},
+  "expected_documents": {"sciq": 1000, "piqa": 1838, "arc_challenge": 1172, "arc_easy": 2376, "hellaswag": 10042, "winogrande": 1267, "mmlu": 14042},
+  "arms": {
+    "baseline8": {"mode": "baseline", "total_loops": 8, "reference_loop": 1, "omega": 0.5, "omega_cap": 1.0},
+    "fixed8": {"mode": "fixed", "total_loops": 8, "reference_loop": 1, "omega": 0.5, "omega_cap": 1.0},
+    "adaptive8": {"mode": "adaptive", "total_loops": 8, "reference_loop": 1, "omega": 0.5, "omega_cap": 1.0},
+    "hidden8": {"mode": "hidden", "total_loops": 8, "reference_loop": 1, "omega": 1.0, "omega_cap": 1.0},
+    "baseline4": {"mode": "baseline", "total_loops": 4, "reference_loop": 1, "omega": 0.5, "omega_cap": 1.0},
+    "fixed4": {"mode": "fixed", "total_loops": 4, "reference_loop": 1, "omega": 0.5, "omega_cap": 1.0},
+    "hidden4": {"mode": "hidden", "total_loops": 4, "reference_loop": 1, "omega": 0.75, "omega_cap": 1.0}
+  },
+  "interpretation": "Independent reconstruction. R4 guided versus baseline8 is the half-depth comparison; baseline4 is an additional same-depth control. No timing-to-FLOP equivalence is assumed."
+}

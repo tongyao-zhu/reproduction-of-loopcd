@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-10-03",
+  "harness_version": "0.4.9.1",
+  "note": "Pinned cached revisions are reproduction choices; the paper does not specify these dataset commits. Paths match the installed harness's original task definitions.",
+  "tasks": {
+    "sciq": {"dataset_path": "sciq", "revision": "2c94ad3e1aafab77146f384e23536f97a4849815", "config": null, "num_fewshot": 0, "eval_split": "test"},
+    "piqa": {"dataset_path": "baber/piqa", "revision": "142f6d7367fd9877f0fb3b5734ea6a545f54cdd1", "config": null, "num_fewshot": 0, "eval_split": "validation"},
+    "arc_challenge": {"dataset_path": "allenai/ai2_arc", "revision": "210d026faf9955653af8916fad021475a3f00453", "config": "ARC-Challenge", "num_fewshot": 25, "eval_split": "test"},
+    "arc_easy": {"dataset_path": "allenai/ai2_arc", "revision": "210d026faf9955653af8916fad021475a3f00453", "config": "ARC-Easy", "num_fewshot": 8, "eval_split": "test"},
+    "hellaswag": {"dataset_path": "Rowan/hellaswag", "revision": "218ec52e09a7e7462a5400043bb9a69a41d06b76", "config": null, "num_fewshot": 10, "eval_split": "validation"},
+    "winogrande": {"dataset_path": "winogrande", "revision": "01e74176c63542e6b0bcb004dcdea22d94fb67b5", "config": "winogrande_xl", "num_fewshot": 5, "eval_split": "validation", "metrics": ["acc"]},
+    "mmlu": {"dataset_path": "cais/mmlu", "revision": "c30699e8356da336a370243923dbaf21066bb9fe", "config": null, "num_fewshot": 5, "eval_split": "test", "group": true, "expected_leaf_tasks": 57, "fewshot_split": "dev", "fewshot_sampler": "first_n", "metrics": ["acc"], "aggregation": "sample-weighted mean; preserve native mmlu group hierarchy"}
+  }
+}

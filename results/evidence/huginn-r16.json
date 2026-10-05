@@ -1,0 +1,88 @@
+{
+  "id": "huginn-r16",
+  "original_file": "huginn_r16_logits_comparison_20261004.json",
+  "original_sha256": "8407f10ce82e92de192639b7c975a403308f7e972ec21a51567800852764db50",
+  "extraction": "Statistical fields copied without modification; machine paths, generated code, model weights and private run logs omitted.",
+  "metrics": {
+    "base": {
+      "baseline_pass_at_1_percent": 22.5609756097561,
+      "delta_percentage_points": 3.6585365853658534,
+      "wins": 13,
+      "losses": 7,
+      "ties": 144,
+      "win_task_ids": [
+        "HumanEval/18",
+        "HumanEval/21",
+        "HumanEval/25",
+        "HumanEval/50",
+        "HumanEval/56",
+        "HumanEval/61",
+        "HumanEval/72",
+        "HumanEval/76",
+        "HumanEval/82",
+        "HumanEval/98",
+        "HumanEval/107",
+        "HumanEval/150",
+        "HumanEval/159"
+      ],
+      "loss_task_ids": [
+        "HumanEval/22",
+        "HumanEval/63",
+        "HumanEval/71",
+        "HumanEval/94",
+        "HumanEval/136",
+        "HumanEval/155",
+        "HumanEval/161"
+      ],
+      "paired_se_percentage_points": 2.7202121276623887,
+      "adaptive_pass_at_1_percent": 26.21951219512195
+    },
+    "plus": {
+      "baseline_pass_at_1_percent": 20.73170731707317,
+      "delta_percentage_points": 2.4390243902439024,
+      "wins": 13,
+      "losses": 9,
+      "ties": 142,
+      "win_task_ids": [
+        "HumanEval/18",
+        "HumanEval/21",
+        "HumanEval/25",
+        "HumanEval/50",
+        "HumanEval/56",
+        "HumanEval/60",
+        "HumanEval/61",
+        "HumanEval/72",
+        "HumanEval/82",
+        "HumanEval/98",
+        "HumanEval/107",
+        "HumanEval/150",
+        "HumanEval/159"
+      ],
+      "loss_task_ids": [
+        "HumanEval/44",
+        "HumanEval/46",
+        "HumanEval/58",
+        "HumanEval/63",
+        "HumanEval/71",
+        "HumanEval/94",
+        "HumanEval/136",
+        "HumanEval/155",
+        "HumanEval/161"
+      ],
+      "paired_se_percentage_points": 2.8624012557329777,
+      "adaptive_pass_at_1_percent": 23.170731707317074
+    }
+  },
+  "n": 164,
+  "full_164": true,
+  "generation_sha256": {
+    "results/runs/20261004-huginn-he-logits-v2/full/baseline16/manifest.json": "2bec87d51e2fd201fd4793b49bb171eeeee3bf9247573c6a28ce83d0d8bd5daa",
+    "results/runs/20261004-huginn-he-logits-v2/full/baseline16/samples.jsonl": "ba0cf64ec7563bca4c6874152d752d76c5a1d0457679b3ce1580bbecf8729fa9",
+    "results/runs/20261004-huginn-he-logits-v2/full/adaptive16/manifest.json": "35302cd8c49ae061d8f1230b0fc3df4cca74982ef634a3503a440268b59d79f8",
+    "results/runs/20261004-huginn-he-logits-v2/full/adaptive16/samples.jsonl": "29b749a228f22ab9efab34bb9f317e89fa5d49c34c6b03134758e696c32adbb1"
+  },
+  "gate_sha256": "9722c0cc9ed2d921bd79477c4eafa011bb5986cd854e0a9fba5a46648d618490",
+  "source_commit": "546bb4f3c8bd3422b8ae8e4d23f8d6229b88ee7e",
+  "generator_commit": "29ea1d89a557d5307afaa1586636e2ed3cb779c1",
+  "path_note": "Generation hash keys normalized to project-relative paths; hash values unchanged."
+}

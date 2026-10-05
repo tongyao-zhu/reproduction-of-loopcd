@@ -1,0 +1,75 @@
+{
+  "id": "huginn-r32",
+  "original_file": "humaneval_r32_comparison.json",
+  "original_sha256": "8023a9860093fe3a39839d2f4e4c8ef038cc8341795639aef6b9cde6d815ddf9",
+  "extraction": "Statistical fields copied without modification; machine paths, generated code, model weights and private run logs omitted.",
+  "metrics": {
+    "base": {
+      "baseline_pass_at_1_percent": 27.439024390243905,
+      "hidden_pass_at_1_percent": 27.439024390243905,
+      "delta_percentage_points": 0,
+      "wins": 11,
+      "losses": 11,
+      "ties": 142,
+      "win_task_ids": [
+        "HumanEval/21",
+        "HumanEval/25",
+        "HumanEval/27",
+        "HumanEval/49",
+        "HumanEval/50",
+        "HumanEval/58",
+        "HumanEval/67",
+        "HumanEval/78",
+        "HumanEval/82",
+        "HumanEval/96",
+        "HumanEval/156"
+      ],
+      "loss_task_ids": [
+        "HumanEval/0",
+        "HumanEval/13",
+        "HumanEval/15",
+        "HumanEval/40",
+        "HumanEval/43",
+        "HumanEval/63",
+        "HumanEval/89",
+        "HumanEval/94",
+        "HumanEval/98",
+        "HumanEval/136",
+        "HumanEval/161"
+      ],
+      "paired_se_percentage_points": 2.868769230801947
+    },
+    "plus": {
+      "baseline_pass_at_1_percent": 23.170731707317074,
+      "hidden_pass_at_1_percent": 23.78048780487805,
+      "delta_percentage_points": 0.6097560975609756,
+      "wins": 9,
+      "losses": 8,
+      "ties": 147,
+      "win_task_ids": [
+        "HumanEval/21",
+        "HumanEval/25",
+        "HumanEval/27",
+        "HumanEval/50",
+        "HumanEval/67",
+        "HumanEval/78",
+        "HumanEval/82",
+        "HumanEval/96",
+        "HumanEval/156"
+      ],
+      "loss_task_ids": [
+        "HumanEval/0",
+        "HumanEval/15",
+        "HumanEval/43",
+        "HumanEval/89",
+        "HumanEval/94",
+        "HumanEval/98",
+        "HumanEval/136",
+        "HumanEval/161"
+      ],
+      "paired_se_percentage_points": 2.521336634702255
+    }
+  },
+  "n_tasks": 164,
+  "full_164_verified": true
+}

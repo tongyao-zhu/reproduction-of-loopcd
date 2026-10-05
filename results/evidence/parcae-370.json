@@ -1,0 +1,52 @@
+{
+  "id": "parcae-370",
+  "original_file": "parcae370_full_comparison_local_20261004.json",
+  "original_sha256": "47b7c5df8e8f724ed7b65aa7bfecb1b839f215a3c7245435f94f284c6abf8143",
+  "extraction": "Statistical fields copied without modification; machine paths, generated code, model weights and private run logs omitted.",
+  "metrics": {
+    "acc": {
+      "available": true,
+      "percent": {
+        "baseline8": 30.034129692832767,
+        "adaptive8": 33.44709897610921
+      },
+      "correct_counts": {
+        "baseline8": 352,
+        "adaptive8": 392
+      },
+      "paired_vs_baseline8": {
+        "adaptive8": {
+          "delta_percentage_points": 3.4129692832764507,
+          "wins": 87,
+          "losses": 47,
+          "ties": 1038,
+          "paired_se_percentage_points": 0.9830746790391409
+        }
+      }
+    },
+    "acc_norm": {
+      "available": true,
+      "percent": {
+        "baseline8": 32.33788395904437,
+        "adaptive8": 35.32423208191126
+      },
+      "correct_counts": {
+        "baseline8": 379,
+        "adaptive8": 414
+      },
+      "paired_vs_baseline8": {
+        "adaptive8": {
+          "delta_percentage_points": 2.986348122866894,
+          "wins": 79,
+          "losses": 44,
+          "ties": 1049,
+          "paired_se_percentage_points": 0.9426645101695423
+        }
+      }
+    }
+  },
+  "n_documents": 1172,
+  "is_full_split": true,
+  "both_figure1b_arms_verified": true,
+  "comparer_source_sha256": "a5bbf805ee3c965b8d2252e84e95c34420a32f962013af29fb2bba857db4f4c4"
+}

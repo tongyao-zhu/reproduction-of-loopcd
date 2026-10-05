@@ -1,0 +1,29 @@
+{
+  "paper": "2610.02185v1",
+  "model": "ByteDance/Ouro-2.6B",
+  "revision": "1ed04250da1a9936042725d302e81c8fa2ab5abd",
+  "total_loops": 4,
+  "early_loop": 1,
+  "fixed_omega": 0.5,
+  "adaptive_cap": 1.0,
+  "mmlu_expected_subjects": 57,
+  "tasks": {
+    "arc_challenge": 25,
+    "arc_easy": 8,
+    "hellaswag": 10,
+    "winogrande": 5,
+    "piqa": 0,
+    "sciq": 0,
+    "mmlu": 5
+  },
+  "source": "Table 2, Tables A2 and A4",
+  "implementation_choices_not_specified_by_paper": {
+    "batch_size": 1,
+    "seed": 42,
+    "model_dtype": "bfloat16",
+    "guidance_dtype": "float32",
+    "attention": "sdpa",
+    "harness_version": "0.4.9.1",
+    "max_length": 8192
+  }
+}

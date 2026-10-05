@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "Please cite the original paper when using this independent reproduction."
+title: "Reproduction of LoopCD"
+type: software
+version: 0.1.0
+authors:
+  - name: "Independent LoopCD reproduction contributors"
+preferred-citation:
+  type: article
+  title: "Decoding Looped Transformers Better for (Almost) Free"
+  authors:
+    - family-names: Liu
+      given-names: Weihao
+    - family-names: Zheng
+      given-names: Huangjie
+    - family-names: Chen
+      given-names: Tianrong
+    - family-names: Dilip
+      given-names: Rohit
+    - family-names: Bai
+      given-names: Richard He
+    - family-names: Jiao
+      given-names: Yizhu
+    - family-names: Wang
+      given-names: Yuyang
+    - family-names: Zhang
+      given-names: Ruixiang
+  year: 2026
+  url: "https://arxiv.org/abs/2610.02185"

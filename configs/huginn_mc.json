@@ -1,0 +1,25 @@
+{
+  "paper": "2610.02185v1",
+  "model": "tomg-group-umd/huginn-0125",
+  "revision": "bb6621b65e90b6a4b9b29ef88dc83866d450470c",
+  "source": "Table A2 (all Huginn MC tasks zero-shot), Table A4 (standard-depth hidden guidance), Table A8 (half-depth hidden guidance)",
+  "source_url": "https://arxiv.org/html/2610.02185v1",
+  "tasks": {"arc_challenge": 0, "arc_easy": 0, "hellaswag": 0, "winogrande": 0, "piqa": 0, "sciq": 0, "mmlu": 0},
+  "standard_reference_by_loops": {"32": 6, "16": 7},
+  "half_depth": {"baseline_loops": 32, "guided_loops": 16, "reference_loop": 6, "omega": 0.5},
+  "fixed_omega": 0.5,
+  "implementation_choices_not_specified_by_paper": {
+    "batch_size": 1,
+    "seed": 42,
+    "model_dtype": "bfloat16",
+    "guidance_dtype": "FP32 blend, cast to native hidden dtype before coda",
+    "attention": "sdpa",
+    "harness_version": "0.4.9.1",
+    "max_length": 4096,
+    "truncation": "reject any request that would be truncated",
+    "use_cache": false,
+    "logits_cache": false,
+    "initialization": "native initialize_state once per scored likelihood request; no explicit input_states, no per-request reseeding",
+    "pairing": "same complete task, data, seed and sorted request order; compare recorded input and RNG/initialization streams before reporting paired effects"
+  }
+}
