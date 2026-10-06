@@ -8,8 +8,6 @@ All eight comparisons are complete. LoopCD improves seven; Huginn R32 is unchang
 
 ![Paper and reproduction, all eight Figure 1b comparisons](figures/figure1b-comparison.png)
 
-[Vector figure (SVG)](figures/figure1b-comparison.svg) · [PDF](figures/figure1b-comparison.pdf)
-
 Scores are percentages; Δ is an absolute percentage-point change. Code tasks use the original benchmark tests, not the extended `Plus` tests. ARC-C and HellaSwag use length-normalized accuracy (`acc_norm`).
 
 <!-- RESULTS:START -->
