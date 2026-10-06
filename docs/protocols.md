@@ -4,7 +4,7 @@ This project evaluates the same-depth comparisons in Figure 1b of arXiv:2610.021
 
 | Model / task | Depth | Early readout | Guidance | Evaluation |
 |---|---:|---:|---|---|
-| Ouro-2.6B Thinking / AIME 2024 | 4 | 1 | Adaptive cap 1.5 | 30 problems × 16 samples per arm; pending |
+| Ouro-2.6B Thinking / AIME 2024 | 4 | 1 | Adaptive cap 1.5 | 30 problems × 16 samples per arm; complete |
 | Ouro-1.4B Thinking / AIME 2024 | 4 | 1 | Adaptive cap 1.0 | 30 problems × 16 samples per arm; complete |
 | Huginn R32 / HumanEval | 32 | 7 | Hidden, ω = 0.3 | 164 problems per arm |
 | Huginn R16 / HumanEval | 16 | 1 | Adaptive logits, cap 0.25 | 164 problems per arm |
@@ -25,9 +25,9 @@ Generated programs are evaluated only in the project's Linux isolation runner af
 
 ## AIME
 
-Both Thinking models use 8,192 new tokens, temperature 1, top-p 0.7, top-k disabled, 16 independently seeded samples per problem, and native EOS. The current backend is vLLM 0.13.0, BF16 eager mode, batch size 2, tensor/pipeline parallelism 1, prefix caching disabled. Ouro-1.4B is complete. Ouro-2.6B is running in five disjoint worklists across two machines. Completed batches from the same vLLM protocol are retained with explicit provenance.
+Both Thinking models use 8,192 new tokens, temperature 1, top-p 0.7, top-k disabled, 16 independently seeded samples per problem, and native EOS. The current backend is vLLM 0.13.0, BF16 eager mode, batch size 2, tensor/pipeline parallelism 1, prefix caching disabled. Both models are complete. Ouro-2.6B used five disjoint worklists across two machines. Completed batches from the same vLLM protocol are retained with explicit provenance.
 
-Earlier Hugging Face generations and throughput probes are not mixed into this result. BF16 kernels, process restarts, batching and backend changes can change sampled trajectories. Numerical and cache tests support the implementation; they do not prove that vLLM reproduces the authors' runtime or the earlier Hugging Face token sequences. A score is reported only after both arms contain all 480 validated samples. Ouro-1.4B passed this check and an independent local re-score: 168/480 → 195/480, or 35.00% → 40.625%. Its paired problem-bootstrap 95% interval for the gain is [0.83, 10.83] percentage points (10,000 resamples, seed 42, keeping all 16 samples of a problem together). This interval does not account for protocol differences.
+Earlier Hugging Face generations and throughput probes are not mixed into this result. BF16 kernels, process restarts, batching and backend changes can change sampled trajectories. Numerical and cache tests support the implementation; they do not prove that vLLM reproduces the authors' runtime or the earlier Hugging Face token sequences. A score is reported only after both arms contain all 480 validated samples. Ouro-1.4B passed this check and an independent local re-score: 168/480 → 195/480, or 35.00% → 40.625%. Its paired problem-bootstrap 95% interval for the gain is [0.83, 10.83] percentage points (10,000 resamples, seed 42, keeping all 16 samples of a problem together). Ouro-2.6B also passed the full independent re-score: 211/480 → 254/480 (43.9583% → 52.9167%), a gain of 8.9583 points with a [4.79, 13.54] problem-bootstrap 95% interval. Neither interval accounts for protocol differences.
 
 ## Looped-Qwen3 reconstruction
 
@@ -37,4 +37,4 @@ This is a preregistered independent reconstruction, not a recovered author confi
 
 ## What the public evidence establishes
 
-Seven comparisons have complete sample counts and paired checks. Six show a positive change; Huginn R32 does not reproduce the reported improvement. The public JSON files contain statistical extracts, original evidence hashes, and relevant source identifiers. They support inspecting the reported counts and arithmetic, but do not replace the full private raw-generation archive. The result verification command checks arithmetic and evidence consistency; it does not regenerate model outputs or independently execute benchmark tests.
+All eight comparisons have complete sample counts and paired checks. Seven show a positive change; Huginn R32 does not reproduce the reported improvement. The public JSON files contain statistical extracts, original evidence hashes, and relevant source identifiers. They support inspecting the reported counts and arithmetic, but do not replace the full private raw-generation archive. The result verification command checks arithmetic and evidence consistency; it does not regenerate model outputs or independently execute benchmark tests.

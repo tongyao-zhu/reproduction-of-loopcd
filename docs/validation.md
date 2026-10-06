@@ -1,10 +1,14 @@
-# Public snapshot validation — 2026-10-05
+# Public snapshot validation — 2026-10-06
 
-- Published result verification: PASS (seven complete comparisons, one pending; evidence hashes, integer counts, paired deltas and README agree).
+- Published result verification: PASS (eight complete comparisons, none pending; evidence hashes, integer counts, paired deltas and README agree).
 - Python syntax: 174 source, research-script, test and example files compiled before publication; no inference was run for this check.
 - README/document local links and all 179 exported source/test hashes: PASS. All numerical modules under `src/` are byte-identical to the research snapshot.
 - CPU adapter suite: **72 passed, 32 skipped, 16 subtests passed** (22.13 seconds). Command: `pytest -q -p no:cacheprovider tests/test_guidance.py tests/test_ouro.py tests/test_huginn.py tests/test_huginn_logits.py tests/test_parcae.py tests/test_qwen_loop.py`. The suite conditionally skipped 32 checks; these are not counted as verified. GPU visibility was disabled.
 - Ouro demonstration: command-line help checked; no new full-checkpoint inference test was run during publication. The underlying adapter is unchanged from the tested research code.
-- No full benchmark rerun or raw-output rescore was performed as part of publication. Historical integration workflows require their source-bound artifacts, described in the reproduction guide.
+- No full benchmark inference rerun was performed as part of publication. The AIME raw-output re-scores are recorded below. Historical integration workflows require their source-bound artifacts, described in the reproduction guide.
 
 - Ouro-1.4B AIME: all 30 problems × 16 samples per arm were independently re-scored from the raw archive. Both arms have 480 samples; canonical60, unique coverage, source hashes and paired seeds/prompts passed. The published extract contains per-problem counts, paired sample outcomes and a problem-bootstrap interval.
+
+- Ouro-2.6B AIME: all 30 × 16 samples per arm independently re-scored; 211 → 254 correct. Canonical60, unique coverage, paired inputs/seeds, token records and 491 frozen source-file hashes passed. All 950 previously saved batches were unchanged; the final archive contains 1,023 files. The source comparison SHA is `50e0f3fbaa14255cf8e321ee868fdcdfb6f1b8e7dde57edf97f800706417a7f5`.
+
+- Final figure: PNG, SVG and PDF generated from the verified eight-row JSON; PNG inspected for labels, alignment and clipping. The figure uses a common 0–100% scale, retains the zero-gain row and prints AIME uncertainty and reconstruction caveats. All 179 exported source hashes and 25 local documentation links rechecked.
