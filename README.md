@@ -1,8 +1,8 @@
 # Reproduction of LoopCD
 
-Code and results for the eight **Figure 1b** comparisons in **[Decoding Looped Transformers Better for (Almost) Free](https://arxiv.org/abs/2610.02185)**.
+A reproduction of **[Decoding Looped Transformers Better for (Almost) Free](https://arxiv.org/abs/2610.02185)**, covering the eight comparisons in **Figure 1b**.
 
-We ran each benchmark with and without LoopCD at the same depth. Seven comparisons improve; Huginn R32 is unchanged. All eight runs are complete. The table below shows our scores alongside the paper's, including the baseline differences.
+All eight comparisons are complete. LoopCD improves seven; Huginn R32 is unchanged. Our results and the paper's scores are shown below.
 
 ## Results
 
@@ -85,11 +85,3 @@ For paired HumanEval generation and isolated scoring, see the [reproduction guid
 | Numerical, cache, pairing and scoring checks | [`tests/`](tests) |
 
 The repository includes the adapters, experiment scripts, tests and result summaries. Some benchmark launchers still depend on artifacts from our original runs; see the [entry-point guide](docs/reproduction.md#4-other-figure-1b-entry-points) before using them. File hashes are recorded in the [source manifest](SOURCE_MANIFEST.json).
-
-## Related work
-
-Other projects have implemented LoopCD too. [apple-loopcd-off-the-shelf](https://github.com/tchayintr/apple-loopcd-off-the-shelf) evaluates it on Thai O-NET and other multiple-choice tasks, and [vLLM-RLT](https://github.com/ThinkFlowLab/vllm-rlt/issues/85) is adding inference support with small benchmark pilots. This repository focuses on the eight Figure 1b comparisons. See [related implementations](docs/related-work.md) for the search results, checked October 6, 2026.
-
-## Citation and license
-
-Please cite the [original paper](https://arxiv.org/abs/2610.02185); bibliographic metadata is in [CITATION.cff](CITATION.cff). Original reproduction code is released under [Apache-2.0](LICENSE). Model weights, datasets and third-party dependencies retain their own licenses; see [third-party notes](THIRD_PARTY.md).
