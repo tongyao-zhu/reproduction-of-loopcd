@@ -1,0 +1,15 @@
+{
+  "description": "Huginn R32 offline token-prefix diagnostics; unchanged copies of locally verified comparison records. No new inference.",
+  "files": {
+    "huginn-r32-256.json": {
+      "sha256": "afc588cd02077f7131df99154699a44c3c65c9884eaca98dbdd5f2803cdb6f98",
+      "cap": 256,
+      "n_per_arm": 164
+    },
+    "huginn-r32-768.json": {
+      "sha256": "97df62000de64e5d4205652690cfa7bc6378e764695879b1fbb4a27499862757",
+      "cap": 768,
+      "n_per_arm": 164
+    }
+  }
+}

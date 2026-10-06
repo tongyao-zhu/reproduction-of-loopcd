@@ -1,8 +1,8 @@
 # Reproduction of LoopCD
 
-An independent reproduction of **[Decoding Looped Transformers Better for (Almost) Free](https://arxiv.org/abs/2610.02185)**, focused on the eight same-depth comparisons in **Figure 1b**.
+Code and results for the eight **Figure 1b** comparisons in **[Decoding Looped Transformers Better for (Almost) Free](https://arxiv.org/abs/2610.02185)**.
 
-**Status — October 6, 2026:** all eight comparisons are complete. LoopCD improves seven of them; Huginn R32 shows no gain. We see much of the same pattern as the paper, but the scores and gains differ. This is an independent project, not affiliated with Apple.
+We ran each benchmark with and without LoopCD at the same depth. Seven comparisons improve; Huginn R32 is unchanged. All eight runs are complete. The table below shows our scores alongside the paper's, including the baseline differences.
 
 ## Results
 
@@ -25,9 +25,9 @@ Scores are percentages; Δ is an absolute percentage-point change. Code tasks us
 | MBPP | Looped-Qwen3 | 66.14 → 70.11 | 65.87 → 69.05 | +3.97 / +3.17 |
 <!-- RESULTS:END -->
 
-Both AIME models improve: Ouro-1.4B goes from 168 to 195 correct samples (+5.63 points), and Ouro-2.6B from 211 to 254 (+8.96). Each arm covers all 30 problems with 16 samples per problem. Both gains are smaller than the paper’s, and the absolute scores are lower.
+The closest baseline scores are Parcae and Looped-Qwen3, within 0.3 points of the paper. AIME starts much lower: −15.83 points for Ouro-1.4B and −17.92 for Ouro-2.6B. Both improve with LoopCD, but neither reaches the paper's scores. Each AIME comparison covers all 30 problems with 16 samples per problem per arm.
 
-For Looped-Qwen3, we built our own implementation from the paper, so the setup may differ from the authors’. We didn’t see a gain on Huginn R32. Our [experiment notes](docs/protocols.md) explain the model settings and how we ran each test.
+Huginn R32 fixes 11 answers and breaks 11, leaving the score at 45/164. We also checked shorter output budgets; the [Huginn notes](docs/huginn.md) show what changed. For Looped-Qwen3, we built the loop wrapper and cache setup around Qwen3-4B. All model settings and the choices we made where the paper leaves details open are in the [experiment notes](docs/protocols.md).
 
 [Detailed results](results/evidence) · [Download results (JSON)](results/figure1b.json) · [Run the experiments](docs/reproduction.md)
 
@@ -69,7 +69,7 @@ python examples/generate_ouro.py --model models/Ouro-2.6B \
   --prompt 'Explain why the sum of two even integers is even.'
 ```
 
-This example demonstrates the adapter; it is **not** a benchmark score. For paired HumanEval generation, isolated scoring, and the status of the remaining research entry points, see [Reproduce](docs/reproduction.md).
+For paired HumanEval generation and isolated scoring, see the [reproduction guide](docs/reproduction.md). It also lists the setup needed by each benchmark runner.
 
 ## Code map
 
@@ -79,12 +79,16 @@ This example demonstrates the adapter; it is **not** a benchmark score. For pair
 | Ouro native-loop readouts | [`ouro.py`](src/loopcd_repro/ouro.py) |
 | Huginn hidden guidance / logit guidance | [`huginn.py`](src/loopcd_repro/huginn.py), [`huginn_logits.py`](src/loopcd_repro/huginn_logits.py) |
 | Parcae loop adapter and MC scoring | [`parcae.py`](src/loopcd_repro/parcae.py), [`parcae_mc.py`](src/loopcd_repro/parcae_mc.py), [`parcae370_mc.py`](src/loopcd_repro/parcae370_mc.py) |
-| Independent Looped-Qwen3 reconstruction | [`qwen_loop.py`](src/loopcd_repro/qwen_loop.py) |
+| Looped-Qwen3 wrapper | [`qwen_loop.py`](src/loopcd_repro/qwen_loop.py) |
 | vLLM 0.13 Ouro adapter | [`vllm_ouro.py`](src/loopcd_repro/vllm_ouro.py), [`vllm_ouro_plugin.py`](src/loopcd_repro/vllm_ouro_plugin.py) |
 | Data preparation, generation, comparison, isolated scoring | [`scripts/`](scripts), [entry-point guide](docs/reproduction.md) |
 | Numerical, cache, pairing and scoring checks | [`tests/`](tests) |
 
-The core adapters are unchanged from the research snapshot. This public export omits model weights, generated programs, server logs and private deployment history. Historical launchers retain their provenance checks and require the corresponding local artifacts; they are not a portable one-command benchmark suite. [Source manifest](SOURCE_MANIFEST.json) records original and exported file hashes.
+The repository includes the adapters, experiment scripts, tests and result summaries. Some benchmark launchers still depend on artifacts from our original runs; see the [entry-point guide](docs/reproduction.md#4-other-figure-1b-entry-points) before using them. File hashes are recorded in the [source manifest](SOURCE_MANIFEST.json).
+
+## Related work
+
+Other projects have implemented LoopCD too. [apple-loopcd-off-the-shelf](https://github.com/tchayintr/apple-loopcd-off-the-shelf) evaluates it on Thai O-NET and other multiple-choice tasks, and [vLLM-RLT](https://github.com/ThinkFlowLab/vllm-rlt/issues/85) is adding inference support with small benchmark pilots. This repository focuses on the eight Figure 1b comparisons. See [related implementations](docs/related-work.md) for the search results, checked October 6, 2026.
 
 ## Citation and license
 

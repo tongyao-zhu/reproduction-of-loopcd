@@ -1,6 +1,6 @@
 # Reproduce and inspect
 
-There are three levels here: inspect the published statistics, use the tested adapters, and rerun the original benchmark workflows. The last level needs model/data preparation and fresh validation artifacts; the archived launchers are deliberately not advertised as turnkey.
+Start with the result check below; it needs only Python. To run inference, install the dependencies and prepare the model and data. Huginn R32 has a generation example here. The other benchmark runners need additional artifacts from the original runs, listed in section 4.
 
 ## 1. Verify published statistics
 
@@ -56,9 +56,9 @@ Use a fresh output directory. `--limit` is only for debugging and is not a full 
 | Qwen MBPP | `generate_qwen_mbpp.py` | `gpu_smoke_qwen_loop_v3.py`, `qwen_stream_oracle.py`, `score_qwen_mbpp.py` |
 | AIME vLLM | `run_vllm_aime.py`, `run_vllm_aime_shard.py` | `gate_vllm_reference.py`, `probe_vllm_aime_budget.py`, `score_sharded_aime.py` |
 
-These are original research workflows with **historical source/certificate bindings**. Some require the original `releases/` trees, full prompt audits, GPU certificates and previous batch manifests, which are not included in the public export. Historical commit IDs in those checks identify the research archive, not public Git commits. Private machine paths in launchers have been replaced by `/path/to/your/workspace`.
+These runners check their inputs against the original source snapshots and validation records. Some require `releases/` directories, prompt audits, GPU checks and previous batch manifests that are not included here. Their historical commit IDs refer to the research archive. Machine paths have been replaced by `/path/to/your/workspace`.
 
-Do not remove those checks to make a run appear validated. A fresh independent run needs new model/input audits, a frozen source snapshot, corresponding GPU checks, and a two-task generation/scoring check before the complete benchmark. The current public release provides the implementations and recorded protocols, but not a fully portable launcher for these seven rows. No end-to-end rerun of the public export is claimed.
+For a fresh run, prepare the model and inputs, freeze the source, run the corresponding GPU checks, then check generation and scoring on two tasks before starting the full benchmark. These seven workflows still need that setup; we have not rerun them end to end from a fresh clone of this repository.
 
 ## 5. Isolated code scoring
 
@@ -70,8 +70,10 @@ For HumanEval, the sequence is:
 # In a dedicated Linux evaluation environment with the installed Python packages
 # and libseccomp.so.2. Preparation requires root; no shared environment is changed.
 python scripts/prepare_eval_sandbox.py --dataset data/HumanEvalPlus-v0.1.10.jsonl
-python scripts/run_eval_sandbox.py --self-test
-python scripts/run_eval_sandbox.py --canonical-all
+python scripts/run_eval_sandbox.py --self-test \
+  --output results/scores/sandbox-safety.json
+python scripts/run_eval_sandbox.py --canonical-all \
+  --output results/scores/sandbox-canonical164.json
 python scripts/run_eval_sandbox.py \
   --samples results/runs/huginn-r32/baseline32/samples.jsonl \
   --output results/scores/huginn-r32-baseline.json
